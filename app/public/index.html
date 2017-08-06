@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+	
+	<title>Friend Finder</title>
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<link rel="shortcut icon" href="../assets/images/gt_favicon.png">
+	
+	<!-- Bootstrap itself -->
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="../assets/css/magister.css">
+
+	<!-- Fonts -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
+</head>
+
+<!-- use "theme-invert" class on bright backgrounds, also try "text-shadows" class -->
+<body class="theme-invert">
+
+<nav class="mainmenu menu">
+	<div class="container">
+		<div class="dropdown">
+			<button type="button" class="navbar-toggle" data-toggle="dropdown"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			<!-- <a data-toggle="dropdown" href="#">Dropdown trigger</a> -->
+			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+				<li><a href="#head" class="active">Hello</a></li>
+				<li><a href="#survey">Survey</a></li>
+				<li><a href="#about">About the Developer</a></li>
+				<li><a href="#contact">Get in touch</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+<!-- Main (Home) section -->
+<section class="section" id="head">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">	
+
+				<!-- Site Title, your name, HELLO msg, etc. -->
+				<h1 class="title">Friend Finder</h1>
+				<h2 class="subtitle">The best way to find new friends!</h2>
+
+				<!-- Short introductory (optional) -->
+				<h3 class="tagline">
+					Simply take the survey, and let us do all the magic.<br>
+					Besties for life!
+				</h3>
+				
+				<!-- Nice place to describe your site in a sentence or two -->
+				<p><a href="#survey" class="btn btn-default btn-lg menu">Click the hamburger menu on the top left to begin.</a></p>
+	
+			</div> <!-- /col -->
+		</div> <!-- /row -->
+	
+	</div>
+</section>
+
+<!-- Second (About) section -->
+<section class="section" id="about">
+	<div class="container">
+	
+		<h2 class="text-center title">About me</h2>
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-2">    
+				<h5><strong>Where's my lorem ipsum?<br></strong></h5>
+				<p>Well, here it is: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, ullam, ducimus, eaque, ex autem est dolore illo similique quasi unde sint rerum magnam quod amet iste dolorem ad laudantium molestias enim quibusdam inventore totam fugit eum iusto ratione alias deleniti suscipit modi quis nostrum veniam fugiat debitis officiis impedit ipsum natus ipsa. Doloremque, id, at, corporis, libero laborum architecto mollitia molestiae maxime aut deserunt sed perspiciatis quibusdam praesentium consectetur in sint impedit voluptates! Deleniti, sequi voluptate recusandae facere nostrum?</p>    
+			</div>
+			<div class="col-sm-4">
+				<h5><strong>More, more lipsum!<br></strong></h5>    
+				<p>Tempore, eos, voluptatem minus commodi error aut eaque neque consequuntur optio nesciunt quod quibusdam. Ipsum, voluptatibus, totam, modi perspiciatis repudiandae odio ad possimus molestias culpa optio eaque itaque dicta quod cupiditate reiciendis illo illum aspernatur ducimus praesentium quae porro alias repellat quasi cum fugiat accusamus molestiae exercitationem amet fugit sint eligendi omnis adipisci corrupti. Aspernatur.</p>    
+				<h5><strong>Author links<br></strong></h5>    
+				<p><a href="http://be.net/pozhilov9409">Behance</a> / <a href="https://twitter.com/serggg">Twitter</a> / <a href="http://linkedin.com/pozhilov">LinkedIn</a> / <a href="https://www.facebook.com/pozhilov">Facebook</a></p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Third (Works) section -->
+<section class="section" id="survey">
+	<div class="container">
+	
+		<h2 class="text-center title">Friend Finder Survey</h2>
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+				<form id="myForm">
+					<div class="input-group theme-invert">
+			  			<span class="input-group-addon" id="basic-addon1">Name</span>
+			  			<input type="text" id="name" class="form-control" aria-describedby="basic-addon1">
+					</div>
+					<br>
+					<div class="input-group theme-invert">
+			  			<span class="input-group-addon" id="basic-addon1">Link To Photo Image</span>
+			  			<input type="text" id="image" class="form-control" aria-describedby="basic-addon1">
+					</div>
+				</form>
+				<br>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-2">
+				<div class="thumbnail">
+					<div class="caption">
+						<h3>Movies and TV</h3>
+						<p>Are you a movie are TV buff?</p>
+						<p>
+							No
+							<label class="radio-inline" for="radios1-0">
+      							<input type="radio" class="q1" name="q1" id="radios1-0" value="1">
+      								1
+    						</label> 
+						    <label class="radio-inline" for="radios1-1">
+						    	<input type="radio" class="q1" name="q1" id="radios1-1" value="2">
+						    		2
+						    </label> 
+						    <label class="radio-inline" for="radios1-2">
+						    	<input type="radio" class="q1" name="q1" id="radios1-2" value="3">
+						    		3
+						    </label> 
+						    <label class="radio-inline" for="radios1-3">
+						    	<input type="radio" class="q1" name="q1" id="radios1-3" value="4">
+						    		4
+						    </label>
+						    Yes
+					    </p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="thumbnail">
+					<div class="caption">
+						<h3>Books</h3>
+						<p>How likely are you to join a bookclub?</p>
+						<p>
+							Not Likey
+							<label class="radio-inline" for="radios2-0">
+      							<input type="radio" class="q2" name="q2" id="radios2-0" value="1">
+      								1
+    						</label> 
+						    <label class="radio-inline" for="radios2-1">
+						    	<input type="radio" class="q2" name="q2" id="radios2-1" value="2">
+						    		2
+						    </label> 
+						    <label class="radio-inline" for="radios2-2">
+						    	<input type="radio" class="q2" name="q2" id="radios2-2" value="3">
+						    		3
+						    </label> 
+						    <label class="radio-inline" for="radios2-3">
+						    	<input type="radio" class="q2" name="q2" id="radios2-3" value="4">
+						    		4
+						    </label>
+						    Likely
+					    </p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-sm-offset-2">
+				<div class="thumbnail">
+					<div class="caption">
+						<h3>Sports and Outdoors</h3>
+						<p>How often do you partcipate in sports or outdoor activities?</p>
+						<p>
+							Not Often
+							<label class="radio-inline" for="radios3-0">
+      							<input type="radio" class="q3" name="q3" id="radios3-0" value="1">
+      								1
+    						</label> 
+						    <label class="radio-inline" for="radios3-1">
+						    	<input type="radio" class="q3" name="q3" id="radios3-1" value="2">
+						    		2
+						    </label> 
+						    <label class="radio-inline" for="radios3-2">
+						    	<input type="radio" class="q3" name="q3" id="radios3-2" value="3">
+						    		3
+						    </label> 
+						    <label class="radio-inline" for="radios3-3">
+						    	<input type="radio" class="q3" name="q3" id="radios3-3" value="4">
+						    		4
+						    </label>
+						    Often
+					    </p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="thumbnail">
+					<div class="caption">
+						<h3>Alcohol</h3>
+						<p>How much do you like to drink?</p>
+						<p>
+							Sober
+							<label class="radio-inline" for="radios4-0">
+      							<input type="radio" class="q4" name="q4" id="radios4-0" value="1">
+      								1
+    						</label> 
+						    <label class="radio-inline" for="radios4-1">
+						    	<input type="radio" class="q4" name="q4" id="radios4-1" value="2">
+						    		2
+						    </label> 
+						    <label class="radio-inline" for="radios4-2">
+						    	<input type="radio" class="q4" name="q4" id="radios4-2" value="3">
+						    		3
+						    </label> 
+						    <label class="radio-inline" for="radios4-3">
+						    	<input type="radio" class="q4" name="q4" id="radios4-3" value="4">
+						    		4
+						    </label>
+						    A LOT
+					    </p>
+					</div>
+				</div>
+			</div>
+		
+			<div class="col-sm-4 col-sm-offset-2">
+				<div class="thumbnail">
+					<div class="caption">
+						<h3>Do you go with the flow?</h3>
+						<p>Do you like a plan or spontaneity?</p>
+						<p>
+							Plan
+							<label class="radio-inline" for="radios5-0">
+	  							<input type="radio" class="q5" name="q5" id="radios5-0" value="1">
+	  								1
+							</label> 
+						    <label class="radio-inline" for="radios3-1">
+						    	<input type="radio" class="q5" name="q5" id="radios5-1" value="2">
+						    		2
+						    </label> 
+						    <label class="radio-inline" for="radios5-2">
+						    	<input type="radio" class="q5" name="q5" id="radios5-2" value="3">
+						    		3
+						    </label> 
+						    <label class="radio-inline" for="radios3-5">
+						    	<input type="radio" class="q5" name="q5" id="radios5-3" value="4">
+						    		4
+						    </label>
+						    No Plan
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="thumbnail">
+					<div class="caption">
+						<h3>Game Night</h3>
+						<p>Do you like to play board games?</p>
+						<p>
+							No
+							<label class="radio-inline" for="radios6-0">
+      							<input type="radio" class="q6" name="q6" id="radios6-0" value="1">
+      								1
+    						</label> 
+						    <label class="radio-inline" for="radios6-1">
+						    	<input type="radio" class="q6" name="q6" id="radios6-1" value="2">
+						    		2
+						    </label> 
+						    <label class="radio-inline" for="radios6-2">
+						    	<input type="radio" class="q6" name="q6" id="radios6-2" value="3">
+						    		3
+						    </label> 
+						    <label class="radio-inline" for="radios6-3">
+						    	<input type="radio" class="q6" name="q6" id="radios6-3" value="4">
+						    		4
+						    </label>
+						    Yes
+					    </p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-sm-offset-2">
+				<div class="thumbnail">
+					<div class="caption">
+						<h3>Home body</h3>
+						<p>Do you like prefer to go out or stay in?</p>
+						<p>
+							In
+							<label class="radio-inline" for="radios7-0">
+	  							<input type="radio" class="q7" name="q7" id="radios7-0" value="1">
+	  								1
+							</label> 
+						    <label class="radio-inline" for="radios7-1">
+						    	<input type="radio" class="q7" name="q7" id="radios7-1" value="2">
+						    		2
+						    </label> 
+						    <label class="radio-inline" for="radios7-2">
+						    	<input type="radio" class="q7" name="q7" id="radios7-2" value="3">
+						    		3
+						    </label> 
+						    <label class="radio-inline" for="radios7-5">
+						    	<input type="radio" class="q7" name="q7" id="radios7-3" value="4">
+						    		4
+						    </label>
+						    Out
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="thumbnail">
+					<div class="caption">
+						<h3>GOT</h3>
+						<p>How much do you love Game of Thrones?</p>
+						<p>
+							Hate
+							<label class="radio-inline" for="radios8-0">
+      							<input type="radio" class="q8" name="q8" id="radios8-0" value="1">
+      								1
+    						</label> 
+						    <label class="radio-inline" for="radios8-1">
+						    	<input type="radio" class="q8" name="q8" id="radios8-1" value="2">
+						    		2
+						    </label> 
+						    <label class="radio-inline" for="radios8-2">
+						    	<input type="radio" class="q8" name="q8" id="radios8-2" value="3">
+						    		3
+						    </label> 
+						    <label class="radio-inline" for="radios8-3">
+						    	<input type="radio" class="q8" name="q8" id="radios8-3" value="4">
+						    		4
+						    </label>
+						    Love
+					    </p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-sm-offset-2">
+				<div class="thumbnail">
+					<div class="caption">
+						<h3>Diet</h3>
+						<p>Do you eat meat?</p>
+						<p>
+							No
+							<label class="radio-inline" for="radios9-0">
+	  							<input type="radio" class="q9" name="q9" id="radios9-0" value="1">
+	  								1
+							</label> 
+						    <label class="radio-inline" for="radios9-1">
+						    	<input type="radio" class="q9" name="q9" id="radios9-1" value="2">
+						    		2
+						    </label> 
+						    <label class="radio-inline" for="radios9-2">
+						    	<input type="radio" class="q9" name="q9" id="radios9-2" value="3">
+						    		3
+						    </label> 
+						    <label class="radio-inline" for="radios9-5">
+						    	<input type="radio" class="q9" name="q9" id="radios9-3" value="4">
+						    		4
+						    </label>
+						    Yes
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="thumbnail">
+					<div class="caption">
+						<h3>Election</h3>
+						<p>Did you support Donald Trump??</p>
+						<p>
+							No
+							<label class="radio-inline" for="radios10-0">
+      							<input type="radio" class="q10" name="q10" id="radios10-0" value="1">
+      								1
+    						</label> 
+						    <label class="radio-inline" for="radios10-1">
+						    	<input type="radio" class="q10" name="q10" id="radios10-1" value="2">
+						    		2
+						    </label> 
+						    <label class="radio-inline" for="radios10-2">
+						    	<input type="radio" class="q10" name="q10" id="radios10-2" value="3">
+						    		3
+						    </label> 
+						    <label class="radio-inline" for="radios10-3">
+						    	<input type="radio" class="q10" name="q10" id="radios10-3" value="4">
+						    		4
+						    </label>
+						    Yes
+					    </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">
+				<!-- <p><a id="submit" class="btn btn-primary btn-lg" href="#" role="button">Submit</a></p> -->
+				<!-- Button trigger modal -->
+				<button id="submit" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+				  Submit
+				</button>
+			</div>
+				<!-- Modal -->
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">Here is your new bestie!</h5>
+				        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button> -->
+				      </div>
+				      <div class="modal-body">
+				        
+				      </div>
+				      <div class="modal-footer">
+				        <button  id="reset" onclick="formReset()" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+			
+		</div>
+	</div>
+</section>
+
+<!-- Fourth (Contact) section -->
+<section class="section" id="contact">
+	<div class="container">
+	
+		<h2 class="text-center title">Get in touch</h2>
+
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2 text-center">
+				<p class="lead">Have a question about this template, or want to suggest a new feature?</p>
+				<p>Feel free to email me, or drop me a line in Twitter!</p>
+				<p><b>gt@gettemplate.com</b><br><br></p>
+				<ul class="list-inline list-social">
+					<li><a href="https://twitter.com/serggg" class="btn btn-link"><i class="fa fa-twitter fa-fw"></i> Twitter</a></li>
+					<li><a href="https://github.com/pozhilov" class="btn btn-link"><i class="fa fa-github fa-fw"></i> Github</a></li>
+					<li><a href="http://linkedin/in/pozhilov" class="btn btn-link"><i class="fa fa-linkedin fa-fw"></i> LinkedIn</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+
+<!-- Load js libs only when the page is loaded. -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="../assets/js/modernizr.custom.72241.js"></script>
+<!-- Custom template scripts -->
+<script src="../assets/js/magister.js"></script>
+</body>
+</html>
+
+<script>
+
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus();
+});
+
+var leastDifference="";
+var friendMatch;
+$("#submit").on("click", function(){
+	event.preventDefault();
+	var newFriend = {
+		name: $("#name").val().trim(),
+		photo: $("#image").val().trim(),
+		scores: [
+		$("input[name=q1]:checked").val(),
+		$("input[name=q2]:checked").val(),
+		$("input[name=q3]:checked").val(),
+		$("input[name=q4]:checked").val(),
+		$("input[name=q5]:checked").val(),
+		$("input[name=q6]:checked").val(),
+		$("input[name=q7]:checked").val(),
+		$("input[name=q8]:checked").val(),
+		$("input[name=q9]:checked").val(),
+		$("input[name=q10]:checked").val(),
+		]
+	};
+	console.log("New friend saved as : " + JSON.stringify(newFriend));
+	
+
+var currentURL= window.location.origin;
+$.post(currentURL + "/api/newFriend", newFriend, function(data){
+ 	console.log("Data(html): " + data[2].scores);
+ 	for(i = 0; i < (data.length-1); i++){
+		var q1 = Math.abs(data[i].scores[0] - newFriend.scores[0]);
+		console.log(data[i].scores[0] + "-" + newFriend.scores[0]);
+		var q2 = Math.abs(data[i].scores[1] - newFriend.scores[1]);
+		var q3 = Math.abs(data[i].scores[2] - newFriend.scores[2]);
+		var q4 = Math.abs(data[i].scores[3] - newFriend.scores[3]);
+		var q5 = Math.abs(data[i].scores[4] - newFriend.scores[4]);
+		var q6 = Math.abs(data[i].scores[5] - newFriend.scores[5]);
+		var q7 = Math.abs(data[i].scores[6] - newFriend.scores[6]);
+		var q8 = Math.abs(data[i].scores[7] - newFriend.scores[7]);
+		var q9 = Math.abs(data[i].scores[8] - newFriend.scores[8]);
+		var q10 = Math.abs(data[i].scores[9] - newFriend.scores[9]);
+		currentDifference = q1+q2+q3+q4+q5+q6+q7+q8+q9+q10;
+		console.log(data[i].name + " " + q1);
+		console.log(q1);
+		console.log(q2);
+		console.log(q3);
+		console.log(q4);
+
+		if (leastDifference){
+			if (currentDifference<leastDifference){
+				currentDifference=leastDifference;
+				friendMatch=data[i];
+			}
+		}
+		if (!leastDifference){
+			leaseDifference = currentDifference;
+			friendMatch=data[i];
+			// console.log("Friend Match: " + JSON.stringify(friendMatch));
+		}
+		if(i=data.length-1){
+			console.log("Your new friend is" + JSON.stringify(friendMatch));
+			$('#myModal').modal('show');
+			$(".modal-body").append("Name: " + (friendMatch.name) +"<br> <img src=" + friendMatch.photo +" width='300'>");
+		}
+ 	}
+
+ });
+
+
+
+
+
+});
+
+function formReset(){
+	document.getElementById("myForm").reset();
+	}
+
+$("#reset").on("click", function(){
+	$(".q1, .q2, .q3, .q4, .q5, .q6, .q7, .q8, .q9, .q10").attr("checked", false);
+	$(".modal-body").text("");
+		
+	// $("#image").attr("value","");
+	// $("#name").attr("value","");
+});
+
+
+
+</script>
