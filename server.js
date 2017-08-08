@@ -18,9 +18,9 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-require("./routing/apiRoutes.js")(app);
-require("./routing/htmlRoutes.js")(app);
-require("./data/friends.js");
+require("./app/routing/apiRoutes.js")(app);
+require("./app/routing/htmlRoutes.js")(app);
+require("./app/data/friends.js");
 
 app.post("/api/newFriend", function(req, res) {
   var newFriend = req.body;
